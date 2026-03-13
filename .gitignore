@@ -1,0 +1,11 @@
+# Dependencias de Node
+node_modules/
+
+# Variables de entorno (¡Peligro!)
+.env
+
+# Archivos de compilación de TypeScript
+dist/
+
+# Logs de debug
+npm-debug.log*

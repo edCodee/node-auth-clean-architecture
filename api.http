@@ -1,0 +1,27 @@
+### Prueba de Salud de la API
+GET http://localhost:3000/api/health
+
+### Registrar un nuevo usuario
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Kethelen",
+  "email": "ketelen.acosta@google.com",
+  "password": "superpassword123",
+  "lastname": "Revelo",
+  "gender": "Male"
+}
+
+### Iniciar sesión con el usuario creado
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "ketelen.acosta@google.com",
+  "password": "superpassword123"
+}
+
+### Obtener mi Perfil (Requiere Token)
+GET http://localhost:3000/api/auth/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YjMzNGJiZDE2MmY2MWU2Zjk3OTRjNiIsImlhdCI6MTc3MzM1MjE1NCwiZXhwIjoxNzczMzU5MzU0fQ.oKhO3965MpYuJFTttiqupGyrqB0BlYUNT6zgpNqWyP8
